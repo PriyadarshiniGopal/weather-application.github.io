@@ -6,33 +6,33 @@
 
 /* Media Queries */
 /* 425px, 768px, 1024px */
-@media (max-width:1024px){
+@media screen and (max-width:1024px){
   .weather-forecast{
     width:100%;
   }
+  
   .sorting{
-    float:none;
-    margin: 0 auto;
+    font-size: 1rem;
   }
-
-  .sorting-bar{
-    height:auto;
-    text-align: center;    
-  }
-
+  
+  .sorting-bar p{ 
+    font-size: 1.2rem; 
+  }  
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .top-section {
       flex-direction: column;
     }
     
-      .sorting-bar p{
-      font-size: 1.5rem;
-    }    
-
     .sorting{
-        font-size: 1rem;
+      position:unset;
+      margin: 0 auto;
+    }
+  
+    .sorting-bar{
+      height:auto;
+      text-align: center;    
     }
 
     .current-temperature-humity{
@@ -59,8 +59,8 @@
       height:1rem;
     }
   }
-  
-@media (max-width: 550px) {
+
+@media screen and (max-width: 550px) {
   .continent-city-list{
     grid-template-columns: auto;
     font-size: 0.8rem;
