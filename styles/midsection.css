@@ -1,0 +1,203 @@
+.middle-section {
+    background-color: black;
+    border-radius: 30px 30px 0px 0px;
+    box-sizing: border-box;
+    height: auto;
+    max-width: 100%;
+    min-width: 480px;
+    padding: 2rem 1rem 0 1rem;
+}
+
+.header {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    height: 20%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    width:100%;
+}
+
+.header-text {
+    display: inline;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width:60%;
+}
+
+.preference{
+    position:sticky;
+}
+
+.preference ,.temperature-detail {
+    display: inline;
+    float: right;
+    margin: 0 auto;
+}
+
+.temperature-detail p {
+    display: inline;
+    float: left;
+}
+
+.city-count-selection{
+    float: right;
+    padding-top: 0.3rem;
+}
+
+.preference-selection-icon  [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+.preference-selection-icon  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  .preference-selection-icon [type=radio]:checked + img {
+    border-bottom: 1px solid aqua;
+  }
+
+.preference input[type=number]::-webkit-inner-spin-button {
+    opacity: 0.5;
+ }
+
+
+.preference img {
+    margin-right: 0.5rem;
+    padding-bottom:0.5rem;
+}
+
+#city-count { 
+    border: none;
+    width: 2.5rem;  
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#city-count:hover{
+    cursor: pointer;
+}
+
+.city-card {
+    align-items: center;
+    border: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.city-card-scroll{
+    
+    overflow-x: scroll;
+}
+
+.card-list {
+    height: 70%;
+    margin: 0 1rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    padding: 0.5rem 0;
+    text-align: left;
+    width: auto;
+}
+
+.card-list > div {
+    background-color: rgb(32, 32, 32);
+    background-image: url("../assets/icons/Cities/newyork.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 60% 60%;
+    border-radius: 1rem;
+    box-shadow: 9px 9px 10px #3d3c3c;
+    flex: none;
+    height: 13rem;
+    line-height: 2rem;
+    margin:1rem 3rem;
+    padding:1rem ;
+    width: 13.5rem; 
+}
+
+.card-list > div:hover {
+    animation: background-color 4s;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    transform:scale(1.2);
+    z-index: 2;   
+}
+
+
+@keyframes background-color {
+  from {background-color: rgb(101, 139, 138);border: white solid 1px;}
+  to {background-color: rgb(159, 159, 194);border: white dashed 1px;}
+}
+
+.arrow {
+    display: inline-flex;
+}
+
+.arrow img {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    height:3rem;
+    width:3rem;
+}
+
+.arrow:hover{
+    cursor:pointer;
+    transform:scale(1.2);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 0;
+    width: 60%;
+}
+
+.temperature-detail img,.temperature-detail span {
+    vertical-align: middle;
+}
+
+.city-card-scroll::-webkit-scrollbar {    
+    display: none;
+}
+
+.city-name  {
+    font-size: 1.3rem;
+}
+
+.temperature{
+    font-size: 1.5rem;
+}
+
+.precipitation-image , .humidity-image {
+    align-items: center;
+    display: flex;
+}
+
+.image-margin-right {
+    margin-right: 0.5rem;
+}
+
+.bold {
+    font-family: Roboto-bold;
+}
+
+.medium {
+    font-family: Roboto-medium;
+}
+
+.temperature-detail img,.temperature-detail span {
+    vertical-align: middle;
+}
