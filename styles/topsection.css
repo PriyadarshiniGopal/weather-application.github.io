@@ -143,3 +143,19 @@ body {
 .vertical-line {
     padding-top:1.9rem;
 }
+
+.tooltiptext {
+    background-color: black;
+    border-radius: 6px;
+    color: #fff;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 120px;
+    z-index: 1;
+}
+  
+.selected-city:hover .tooltiptext {
+    visibility: visible;
+  }

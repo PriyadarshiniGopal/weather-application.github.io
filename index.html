@@ -14,10 +14,11 @@
             <div class="city-selection">
                 <!-- City Icon -->
                 <div class="city-icon">
-                    <img alt="city-icon" src="./assets/icons/Cities/newyork.svg">
+                    <img alt="city-icon" class="selected-city-icon" src="./assets/icons/Cities/newyork.svg">
                 </div>
                 <!-- City Selection Input -->
                 <form class="selected-city">
+                    <span class="tooltiptext">City selction</span>
                     <input list="city-list" id="city" >
                     <datalist id="city-list">
                         <option value="Nome">Nome</option>
@@ -329,22 +330,22 @@
         <section class="bottom-section">
             <!-- Bottom section  -->
             <div class="sorting-bar">
-                <p class="medium">Cities across continents at a Glance</p>
-                <div class="sorting">
+                <span class="medium title">Cities across continents at a Glance</span>
+                <span class="sorting">
                     <!-- continent and temperature sorting -->
-                    <div class="continent-sorting">
+                    <span class="continent-sorting">
                         <span>Continent Name</span>
-                        <div>
+                        <span>
                             <img alt="downarrow" src="./assets/icons/general/arrowDown.svg">
-                        </div>
-                    </div>
-                    <div class="temperature-sorting">
+                        </span>
+                    </span>
+                    <span class="temperature-sorting">
                         <span>Temperature</span>
-                        <div>
+                        <span>
                             <img alt="uparrow" src="./assets/icons/general/arrowUp.svg">
-                        </div>
-                    </div>
-                </div>
+                        </span>
+                    </span>
+                </span>
             </div>
             <div class="continent-city-list">
                 <!-- list of continent nad cities -->
