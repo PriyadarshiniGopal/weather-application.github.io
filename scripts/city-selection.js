@@ -117,7 +117,7 @@ function topsection() {
     let cityName = cityinput.value;
     cityName = cityName.toLowerCase();
     document.getElementById("temp-c").innerHTML = (MainData[cityName]['temperature']);
-    document.getElementById("selected-city-icon").src = (`./assets/icons/Cities/${cityName}.svg`);
+    document.getElementById("selected-city-icon").src = (`assets/icons/Cities/${cityName}.svg`);
     document.getElementById("temp-f").innerHTML = celciustofahrenheit(MainData[cityName]['temperature']);
     document.getElementById("city-humidity").innerHTML = MainData[cityName]['humidity'];
     document.getElementById("city-precipitation").innerHTML = MainData[cityName]['precipitation'];
