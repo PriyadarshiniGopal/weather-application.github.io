@@ -71,7 +71,7 @@ getData().then(function (data) {
             if (index >= 10)
                 break;
             card[index].style.display = "initial";  //to make selected city cards to visible
-            card[index].style.backgroundImage = "url(../assets/icons/Cities/" + items + ".svg)";    //set values from json data
+            card[index].style.backgroundImage = "url(./assets/icons/Cities/" + items + ".svg)";    //set values from json data
             cityName[index].innerHTML = resultCity[items]['cityName'];
             preferenceIcon[index].src = "./assets/icons/weather/" + option + "Icon.svg"
             temperature[index].innerHTML = resultCity[items]['temperature'];
