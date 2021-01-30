@@ -7,11 +7,8 @@
     min-width: 480px;
 }
 
-.sorting-bar p,.sorting-bar div {
-    display: inline-flex;
-}
 
-.sorting-bar p{
+.title{
     font-size: 2rem;
 }
 .sorting-bar img {
@@ -26,7 +23,7 @@
 .sorting {
     position: absolute;
     right: 5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .continent-sorting > *{
